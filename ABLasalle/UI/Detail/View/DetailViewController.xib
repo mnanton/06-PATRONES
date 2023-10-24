@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="ABLasalle" customModuleProvider="target">
+            <connections>
+                <outlet property="imagePlayer" destination="Vx8-sk-hX7" id="fXg-93-RZX"/>
+                <outlet property="lblDescription" destination="xCb-DN-5th" id="xTZ-nz-Puu"/>
+                <outlet property="lblDorsal" destination="Jmt-Wj-lZH" id="0xK-yf-ssd"/>
+                <outlet property="lblJugador" destination="dQ3-wP-NbP" id="7Jc-Zr-ERp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipox1" translatesAutoresizingMaskIntoConstraints="NO" id="163-Cd-mJ4">
+                    <rect key="frame" x="20" y="59" width="353" height="300"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cg4-5d-D0F">
+                    <rect key="frame" x="20" y="399" width="353" height="160"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-sk-hX7">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="MWS-js-64C"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-mP-m3e">
+                            <rect key="frame" x="120" y="0.0" width="233" height="160"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Jugador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQ3-wP-NbP" userLabel="LBLjugador">
+                                    <rect key="frame" x="0.0" y="0.0" width="233" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="233" id="Xfr-Z1-hEC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Dorsal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdU-l1-Dlb" userLabel="LBLcamisa">
+                                    <rect key="frame" x="0.0" y="30" width="233" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="233" id="MuB-Xb-06K"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" systemColor="systemPinkColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmt-Wj-lZH" userLabel="LBLplayer">
+                                    <rect key="frame" x="0.0" y="130" width="233" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="IdU-l1-Dlb" firstAttribute="top" secondItem="P6f-mP-m3e" secondAttribute="top" constant="30" id="3az-0f-DPr"/>
+                                <constraint firstItem="Jmt-Wj-lZH" firstAttribute="centerX" secondItem="P6f-mP-m3e" secondAttribute="centerX" id="FcY-ET-54X"/>
+                                <constraint firstItem="IdU-l1-Dlb" firstAttribute="centerY" secondItem="P6f-mP-m3e" secondAttribute="centerY" id="k2e-AZ-dVW"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="8io-iK-fAM"/>
+                        <constraint firstAttribute="bottom" secondItem="P6f-mP-m3e" secondAttribute="bottom" id="GD3-0z-JA0"/>
+                        <constraint firstAttribute="trailing" secondItem="P6f-mP-m3e" secondAttribute="trailing" id="OO9-iI-ZO3"/>
+                        <constraint firstItem="P6f-mP-m3e" firstAttribute="top" secondItem="cg4-5d-D0F" secondAttribute="top" id="alP-Sc-v8A"/>
+                    </constraints>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-DN-5th" userLabel="LBLdescription">
+                    <rect key="frame" x="16" y="599" width="361" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="tYE-5d-9dB"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cg4-5d-D0F" secondAttribute="trailing" constant="20" id="4lw-zy-drQ"/>
+                <constraint firstAttribute="trailing" secondItem="163-Cd-mJ4" secondAttribute="trailing" constant="20" id="M9O-Cs-dTa"/>
+                <constraint firstItem="163-Cd-mJ4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="R6A-bE-mvE"/>
+                <constraint firstItem="163-Cd-mJ4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XSF-4f-S78"/>
+                <constraint firstItem="cg4-5d-D0F" firstAttribute="top" secondItem="163-Cd-mJ4" secondAttribute="bottom" constant="40" id="kyk-gI-J9Q"/>
+                <constraint firstItem="xCb-DN-5th" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lAH-jP-5wn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xCb-DN-5th" secondAttribute="trailing" constant="16" id="nRc-Eo-dRM"/>
+                <constraint firstItem="cg4-5d-D0F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ovB-OM-gpa"/>
+                <constraint firstItem="xCb-DN-5th" firstAttribute="top" secondItem="cg4-5d-D0F" secondAttribute="bottom" constant="40" id="xvi-Bu-Q21"/>
+            </constraints>
+            <point key="canvasLocation" x="-109.16030534351144" y="-32.394366197183103"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="equipox1" width="300" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
